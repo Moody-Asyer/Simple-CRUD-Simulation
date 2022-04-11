@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
