@@ -1,0 +1,24 @@
+table, th, td {
+    border:1px solid maroon;
+}
+
+label.keyword, label.new{
+    margin-top:15px;
+}
+
+input.keyword_input, input.new_input{
+    width: 250px;
+    height: 25px;
+    margin: 10px;
+}
+
+input.tambah, input.cari{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+th, td{
+    width: 250px;
+    height: 20px;
+}

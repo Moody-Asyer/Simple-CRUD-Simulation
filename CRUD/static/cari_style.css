@@ -1,0 +1,15 @@
+label.keyword, input.keyword, button.cari{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+}
+
+table, th, td{
+    width: 250px;
+    height: 20px;
+    border: 1px solid maroon;
+}
+
+input.back{
+    margin-top: 15px;
+}

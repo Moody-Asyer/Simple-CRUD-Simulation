@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {% block title %}{% endblock %} </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+    {% block body %} 
+    <div class='all'>
+        <form method="POST" action="/cari">
+                <label class="keyword">Keyword:</label>
+                <input class="keyword_input" type="text" id="keyword" name="keyword">
+                <input type="submit"/ class="cari" type="button" value="Search">
+        </form>
+        <form method="POST" action="/new">
+            <input type="submit"/ class="tambah" type="button" value="Add New Item">
+        </form>
+        <table style="width:100%">
+            <tr>
+                <th>Id</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Active</th>
+            </tr>
+            {% for id,code,name,active in items %}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{code}}</td>
+                <td>{{name}}</td>
+                <td>{{active}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endblock %}
+    </body>
+</html>

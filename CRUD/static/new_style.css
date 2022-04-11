@@ -1,0 +1,27 @@
+.all{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.enter_new_code, .enter_new_name,.active{
+    margin-bottom: 15px;
+}
+
+.enter_new_code{
+    margin-top: 10px;
+}
+
+label.new_name{
+    margin-left: 5px;
+}
+
+label.active{
+    margin-left: 5px;
+}
+
+input.tambah, input.back{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 175px;
+}
